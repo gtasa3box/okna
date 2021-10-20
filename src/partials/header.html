@@ -31,8 +31,18 @@
   </div>
   <div class="header__nav">
     <nav class="nav">
-      <a class="nav__elem">ОКНА<span></span></a>
-      <a class="nav__elem">ДВЕРИ<span></span></a>
+      <a class="nav__elem" data-target="#windows">ОКНА<span></span></a>
+      <div id="windows" class="header__drop">
+        <a class="nav__elem-drop">Всякие</a>
+        <a class="nav__elem-drop">Разные</a>
+        <a class="nav__elem-drop">Окошечки</a>
+      </div>
+      <a class="nav__elem" data-target="#doors">ДВЕРИ<span></span></a>
+      <div id="doors" class="header__drop">
+        <a class="nav__elem-drop">Входные двери</a>
+        <a class="nav__elem-drop">Межкомнатные двери</a>
+        <a class="nav__elem-drop">Раздвижные двери</a>
+      </div>
       <a class="nav__elem">ФУРНИТУРА</a>
       <a class="nav__elem">ЦЕНЫ</a>
       <a class="nav__elem">О НАС</a>

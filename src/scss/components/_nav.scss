@@ -38,6 +38,9 @@
         &:hover {
             opacity: 0.8;
         }
+        &-drop {
+            cursor: pointer;
+        }
         span {
             display: block;
             background-image: url(../img/arrow-drop.svg);
