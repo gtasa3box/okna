@@ -1,4 +1,23 @@
 .wrapper {
     max-width: 345px;
     margin: 0 auto;
+    @media (min-width:601px) and (max-width:1099px) {
+        max-width: 728px;
+    }
+    @media (min-width:1100px) and (max-width:1619px) {
+        max-width: 992px;
+    }
+    @media (min-width:1620px) {
+        max-width: 1600px;
+    }
+}
+
+@media (min-width:601px) and (max-width:1099px) {
+
+}
+@media (min-width:1100px) and (max-width:1619px) {
+
+}
+@media (min-width:1620px) {
+      
 }

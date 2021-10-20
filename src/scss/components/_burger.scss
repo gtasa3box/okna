@@ -7,6 +7,7 @@
 	background-color: white;
 	position: absolute;
 	right: 0;
+	top: 0;
 	transition: 0.5s ease; 
 	&:before {
 		content: '';
@@ -14,7 +15,7 @@
 		width: 36px;
 		height: 4px;
 		background-color: white;
-		top: -12px;
+		top: 12px;
 		transition: 0.5s ease;
 	}
 	&:after {
@@ -23,7 +24,7 @@
 		width: 36px;
 		height: 4px;
 		background-color: white;
-		top: 12px;
+		top: 24px;
 		transition: 0.5s ease;
 	}
 }

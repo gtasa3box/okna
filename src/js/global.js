@@ -1,1 +1,4 @@
-console.log('global');
+$('.burger').click(function() {
+    $(this).toggleClass('active');
+    $('.nav').toggleClass('active');
+});

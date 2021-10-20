@@ -6,6 +6,18 @@
     background-position: center;
     width: 23px;
     height: 23px;
+    @media (min-width:601px) and (max-width:1099px) {
+        width: 20.81px;
+        height: 20.81px;
+    }
+    @media (min-width:1100px) and (max-width:1619px) {
+        width: 21.07px;
+        height: 21.07px;
+    }
+    @media (min-width:1620px) {
+        width: 34px;
+        height: 34px;
+    }
     &-text {
         font-family: 'Geometria',sans-serif;
         font-style: normal;
@@ -16,5 +28,18 @@
         color: #FFFFFF;
         max-width: 87px;
         margin-left: 5px;
+        @media (min-width:601px) and (max-width:1099px) {
+            max-width: 145px;
+        }
+        @media (min-width:1100px) and (max-width:1619px) {
+            font-size: 18px;
+            line-height: 23px;
+            max-width: initial;
+        }
+        @media (min-width:1620px) {
+            font-size: 30px;
+            line-height: 38px;
+            max-width: initial;
+        }
     }
 }
