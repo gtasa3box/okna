@@ -1,0 +1,161 @@
+.slider-gallery-works {
+    margin: 40px 0 80px !important;
+    @media (min-width:601px) and (max-width:1099px) {
+        margin: 40px 0 !important;
+    }
+    @media (min-width:1100px) and (max-width:1619px) {
+        margin: 30px 0 !important;
+    }
+    @media (min-width:1620px) {
+        margin: 50px 0 !important;
+    }
+    &__slide {
+        a {
+            display: block;
+            background-size: 120%;
+            background-position: center;
+            background-repeat: no-repeat;
+            width: 345px;
+            height: 250px;
+            border-radius: 10px;
+            @media (min-width:601px) and (max-width:1099px) {
+                width: 349px;
+                height: 212px;
+            }
+            @media (min-width:1100px) and (max-width:1619px)  {
+                width: 305.52px;
+                height: 185.91px;
+            }
+            @media (min-width:1620px) {
+                width: 493px;
+                height: 300px;
+            }
+        }
+    }
+     //padding-slide
+    .slick-slide {
+        margin: 0 30px;
+        @media (min-width:601px) and (max-width:1099px) {
+            margin: 0 15px;
+        }
+        @media (min-width:1100px) and (max-width:1619px) {
+            margin: 0 20px;
+        }
+        @media (min-width:1620px) {
+            margin: 0 30px;
+        }
+    }
+    .slick-list {
+        margin: 0 -30px;
+        @media (min-width:601px) and (max-width:1099px) {
+            margin: 0 -15px;
+        }
+        @media (min-width:1100px) and (max-width:1619px) {
+            margin: 0 -20px;
+        }
+        @media (min-width:1620px) {
+            margin: 0 -30px;
+        }
+    }
+    //dots
+    .slick-dots {
+        bottom: -41px;
+        @media (min-width:601px) and (max-width:1099px) {
+            bottom: initial;
+            top: -65px;
+            text-align: right;
+            width: 100px;
+            right: 0;
+            background-color: #1C1512;
+        }
+        @media (min-width:1100px) and (max-width:1619px) {
+            bottom: initial;
+            top: -55px;
+            text-align: left;
+            padding-left: 26px;
+            width: 170px;
+            right: 0;
+            background-color: #1C1512;
+        }
+        @media (min-width:1620px) {
+            bottom: initial;
+            top: -87px;
+            text-align: left;
+            padding-left: 26px;
+            width: 270px;
+            right: 0;
+            background-color: #1C1512;
+        }
+    }
+    .slick-dots li {
+        width: 11px;
+        height: 11px;
+        @media (min-width:1100px) and (max-width:1619px) {
+            width: 7px;
+            height: 7px;
+        }
+    }
+    .slick-dots li button {
+        width: 11px;
+        height: 11px;
+        @media (min-width:1100px) and (max-width:1619px) {
+            width: 7px;
+            height: 7px;
+        }
+        &:before {
+            opacity: 1;
+            border: 1px solid #FFFFFF;
+            border-radius: 50%;
+            content: '';
+            transition: 0.3s ease;
+            width: 11px;
+            height: 11px;
+            @media (min-width:1100px) and (max-width:1619px) {
+                width: 7px;
+                height: 7px;
+            }
+        }
+    }
+    .slick-dots li.slick-active button:before {
+        background-color: #FFFFFF;
+        border-color: #FFFFFF;
+        opacity: 1;
+    }
+    //arrow
+    .slick-arrow {
+        top:-43px;
+        right: 0;
+        left: initial;
+        z-index: 3;
+        width: 24px;
+        height: 12px;
+        @media (min-width:1620px) {
+            top: -71px;
+            width: 37px;
+            height: 19px;
+        }
+        &::before {
+            content: '';
+            display: block;
+            background-image: url(../img/arrow-slider.svg);
+            background-size: contain;
+            background-position: center;
+            background-repeat: no-repeat;
+            width: 24px;
+            height: 12px;
+            @media (min-width:1620px) {
+                width: 37px;
+                height: 19px;
+            }
+        }
+    }
+    .slick-prev {
+        right: 30px;
+        transform: rotate(180deg);
+        top:-49px;
+        @media (min-width:1620px) {
+            top: -81px;
+        }
+    }
+}
+
