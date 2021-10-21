@@ -134,6 +134,7 @@ a {
         top: 125%;
         width: 46px;
         height: 46px;
+        z-index: 7;
         @media (min-width:601px) and (max-width:1099px) {
             top: 125%;
         }
@@ -143,11 +144,35 @@ a {
     }
     &__drop {
         display: none;
+        border: 1px solid #FFBC17;
+        width: 209px;
+        border-left: none;
+        border-right: none;
         @media (min-width:1100px) and (max-width:1619px) {
-
+            position: absolute;
+            top: 37px;
+            background-color: white;
+            z-index: 6;
+            padding: 0 17px;
+            border: none;
+            left: 0;
         }
         @media (min-width:1620px) {
-            
+            position: absolute;
+            top: 45px;
+            background-color: white;
+            z-index: 6;
+            padding: 0 17px;
+            border: none;
+            left: 0;
+        }
+        &_two {
+            @media (min-width:1100px) and (max-width:1619px) {
+                left: 120px;
+            }
+            @media (min-width:1620px) {
+                left: 155px;
+            }
         }
     }
 }

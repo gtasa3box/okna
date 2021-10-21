@@ -1,7 +1,24 @@
 .nav {
     max-width: 345px;
     margin: 0 auto;
-    display: none;
+    display: flex;
+    @media (max-width:1099px) {
+        //nav mob
+        max-width: initial;
+        position: absolute;
+        height: 100vh;
+        background-color:  rgba(0, 0, 0, 0.8);
+        width: 100%;
+        z-index: 6;
+        top: 0;
+        right: -100%;
+        transition: 0.3s ease;
+        padding-top: 145px;
+        padding-right: 16px;
+    }
+    @media (max-width:601px) {
+        padding-right: 20px;
+    }
     @media (min-width:1100px) and (max-width:1619px) {
         display: flex;
         justify-content: space-between;
@@ -16,10 +33,31 @@
         max-width: 1130px;
         min-width: 1130px;
     }
+    .wrapper {
+        width: 345px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        @media (min-width:601px) and (max-width:1099px) {
+            width: 728px;
+        }
+        @media (min-width:1100px) {
+            margin: initial;
+            max-width: initial;
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+            position: relative;
+        }
+    }
     &__elem {
         font-family: 'Ubuntu',sans-serif;
         font-style: normal;
         font-weight: 300;
+        font-size: 16.0091px;
+        line-height: 18px;
         letter-spacing: 0.02em;
         text-transform: uppercase;
         color: #FFFFFF;
@@ -27,19 +65,50 @@
         align-items: center;
         cursor: pointer;
         transition: 0.3s ease;
+        padding: 15px 0;
         @media (min-width:1100px) and (max-width:1619px) {
             font-size: 13px;
             line-height: 15px;
+            padding: 0;
         }
         @media (min-width:1620px) {
             font-size: 18px;
             line-height: 21px;
+            padding: 0;
         }
         &:hover {
             opacity: 0.8;
         }
         &-drop {
             cursor: pointer;
+            padding: 15px 30px 15px 0;
+            display: block;
+            width: 100%;
+            text-align: right;
+            font-family: 'Ubuntu',sans-serif;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 14px;
+            line-height: 180%;
+            @media (min-width:1100px) and (max-width:1619px) {
+                color: black;
+                text-align: left;
+                padding: 17px 11px 15px 11px;
+                &:not(:last-child) {
+                    border-bottom: 1px solid #FFBC17;
+                }
+            }
+            @media (min-width:1620px) {
+                color: black;
+                text-align: left;
+                padding: 17px 11px 15px 11px;
+                &:not(:last-child) {
+                    border-bottom: 1px solid #FFBC17;
+                }
+            }
+            &:hover {
+                opacity: 0.8;
+            }
         }
         span {
             display: block;
@@ -66,8 +135,8 @@
                 background-size: 14px 8px;
                 margin-left: 5px;
             }
-            &:hover {
-                transform: rotate(20deg);
+            &.active {
+                transform: rotate(180deg);
             }
         }
     }
