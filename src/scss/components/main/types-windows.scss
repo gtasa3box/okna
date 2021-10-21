@@ -1,0 +1,18 @@
+.types-windows {
+    &__content {
+        padding: 123px 0 116px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        @media (min-width:601px) and (max-width:1099px) {
+            padding: 150px 0 91px;
+            justify-content: space-around;
+        }
+        @media (min-width:1100px) and (max-width:1619px) {
+            padding: 165px 0 113px;
+        }
+        @media (min-width:1620px) {
+            padding: 226px 0 166px;
+        }
+    }
+}
