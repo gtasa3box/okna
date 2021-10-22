@@ -18,6 +18,7 @@
             width: 345px;
             height: 250px;
             border-radius: 10px;
+            transition: 0.3s ease;
             @media (min-width:601px) and (max-width:1099px) {
                 width: 349px;
                 height: 212px;
@@ -29,6 +30,9 @@
             @media (min-width:1620px) {
                 width: 493px;
                 height: 300px;
+            }
+            &:hover {
+                background-size: 130%;
             }
         }
     }
