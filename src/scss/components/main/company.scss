@@ -1,0 +1,222 @@
+.company {
+    padding-bottom: 70px;
+    @media (min-width:601px) and (max-width:1099px) {
+        padding-bottom: 80px;
+    }
+    @media (min-width:1100px) and (max-width:1619px) {
+        padding-bottom: 130px;  
+    }
+    @media (min-width:1620px) {
+        padding-bottom: 209px; 
+    }
+    .wrapper {
+        @media (min-width:1100px) {
+            position: relative;
+        }
+    }
+    &__content {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        @media (min-width:1100px) and (max-width:1619px) {
+            flex-direction: row;
+            justify-content: space-between;
+        }
+        @media (min-width:1620px) {
+            flex-direction: row;
+            justify-content: space-between;
+        }
+    }
+    &__img {
+        display: block;
+        position: relative;
+        margin-top: 46px;
+        width: 333px;
+        height: 179px;
+        background-image: url(../img/company/1.jpg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        border-radius: 10px;
+        @media (min-width:601px) and (max-width:1099px) {
+            width: 709px;
+            height: 234px;
+        }
+        @media (min-width:1100px) and (max-width:1619px) {
+            width: 478.52px;
+            height: 256.04px;
+            margin-top: -47px;
+        }
+        @media (min-width:1620px) {
+            width: 770px;
+            height: 412px;
+            margin-top: -89px;
+        }
+        &::before {
+            content: '';
+            position: absolute;
+            width: 328px;
+            height: 179px;
+            border-radius: 10px;
+            border: 2px solid #FAC136;
+            top: -16px;
+            right: -12px;
+            @media (min-width:601px) and (max-width:1099px) {
+                width: 709px;
+                height: 234px;
+            }
+            @media (min-width:1100px) and (max-width:1619px) {
+                width: 478.52px;
+                height: 256.04px;
+            }
+            @media (min-width:1620px) {
+                width: 770px;
+                height: 412px;
+            }
+        }
+    }
+    &__text {
+        font-family: 'Ubuntu',sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 12px;
+        line-height: 150%;
+        letter-spacing: 0.02em;
+        color: rgba(255, 255, 255, 0.7);
+        margin-top: 30px;
+        @media (min-width:601px) and (max-width:1099px) {
+            order: -1;
+            margin-top: 15px;
+        }
+        @media (min-width:1100px) and (max-width:1619px) {
+            order: -1;
+            margin-top: 17px;
+            width: 47%;
+        }
+        @media (min-width:1620px) {
+            order: -1;
+            margin-top: 30px;
+            width: 47%;
+            font-size: 18px;
+        }
+    }
+    &__info {
+        margin-top: 30px;
+        display: flex;
+        flex-wrap: wrap;
+        @media (min-width:601px) and (max-width:1099px) {
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 40px;
+        }
+        @media (min-width:1100px) and (max-width:1619px) {
+            justify-content: space-between;
+            align-items: flex-end;
+            margin-top: 0px;
+            min-width: 413px;
+            position: absolute;
+            right: 24px;
+            top: 190px;
+        }
+        @media (min-width:1620px) {
+            justify-content: space-between;
+            align-items: flex-end;
+            margin-top: 0px;
+            min-width: 666px;
+            position: absolute;
+            right: 39px;
+            top: 300px;
+        }
+    }
+    &__imgplay {
+        display: block;
+        width: 345px;
+        height: 209.2px;
+        border-radius: 10px;
+        position: relative;
+        cursor: pointer;
+        background-image: url(../img/company/2.png);
+        background-size: 110%;
+        background-position: center;
+        background-repeat: no-repeat;
+        transition: 0.3s ease;
+        @media (min-width:601px) and (max-width:1099px) {
+            order: 1; 
+            width: 415px;
+            height: 142px;
+        }
+        @media (min-width:1100px) and (max-width:1619px) {
+            order: 1; 
+            width: 233.67px;
+            height: 141.69px;
+        }
+        @media (min-width:1620px) {
+            order: 1;
+            width: 376px;
+            height: 228px;
+        }
+        &::before {
+            content: '';
+            position: absolute;
+            background-image: url(../img/play.svg);
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+            width: 64.23px;
+            height: 63.31px;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            @media (min-width:601px) and (max-width:1099px) {
+                width: 43.5px;
+                height: 42.88px;  
+            }
+            @media (min-width:1100px) and (max-width:1619px) {
+                width: 43.5px;
+                height: 42.88px;
+            }
+            @media (min-width:1620px) {
+                width: 70px;
+                height: 69px;
+            }
+        }
+        &:hover {
+            background-size: 120%;
+        }
+    }
+    .btn {
+        height: 40px;
+        width: 100%;
+        margin-top: 40px;
+        @media (min-width:601px) and (max-width:1099px) {
+            margin-top: 0;
+            width: 254px;
+            height: 40px;
+            font-size: 12px;
+            line-height: 16px;
+        }
+        @media (min-width:1100px) and (max-width:1619px) {
+            width: 142.94px;
+            height: 32.32px;
+            margin-top: 0;
+            margin-bottom: 27px;
+            font-size: 12px;
+            line-height: 16px;
+        }
+        @media (min-width:1620px) {
+            width: 230px;
+            height: 52px;
+            font-size: 18px;
+            line-height: 24px;
+            margin-top: 0;
+            margin-bottom: 45px;
+        }
+    }
+    .title {
+        &::before {
+            @media (min-width:601px) {
+                content: none;
+            }
+        }
+    }
+}

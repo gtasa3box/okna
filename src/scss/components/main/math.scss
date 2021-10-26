@@ -107,15 +107,15 @@
         padding: 30px 0;
         @media (min-width:601px) and (max-width:1099px) {
             max-width: 474px;
-            padding: 30px 0 137px;
+            padding: 30px 0 27px;
         }
         @media (min-width:1100px) and (max-width:1619px) {
             max-width: 513px;
-            padding: 53px 0 145px;
+            padding: 53px 0 43px;
         }
         @media (min-width:1620px) {
             max-width: 792px;
-            padding: 53px 0 232px;
+            padding: 53px 0 52px;
         }
         &:before {
             content: '';

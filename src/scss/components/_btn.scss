@@ -4,6 +4,21 @@
     align-items: center;
     cursor: pointer;
     transition: 0.3s ease;
+    &_black {
+        background-color: transparent;
+        border: 1px solid #FFFFFF;
+        font-family: 'Prata',sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 19px;
+        letter-spacing: 0.02em;
+        color: #FFFFFF;
+        &:hover {
+            background-color: white;
+            color: black;
+        }
+    }
     &_gold {
         background: linear-gradient(270deg, #FFBC17 0%, #FAC136 22.4%, #FFD776 34.9%, #F4C041 44.79%, #E2A91B 100%);
         box-shadow: 0px 0px 20px rgba(249, 202, 10, 0.3);
