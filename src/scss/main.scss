@@ -10,6 +10,7 @@
 @import "./components/forms";
 @import "./components/wrapper";
 
+//header
 @import "./components/header";
 
 //main
@@ -20,3 +21,7 @@
 @import "./components/main/math";
 @import "./components/main/buy-wood";
 @import "./components/main/company";
+
+//footer 
+@import "./components/footer/backcall";
+@import "./components/footer/footer";
