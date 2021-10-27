@@ -8,6 +8,7 @@
 @import "./components/titles";
 @import "./components/sliders";
 @import "./components/forms";
+@import "./components/breadcrumbs";
 @import "./components/wrapper";
 
 //header
@@ -21,6 +22,9 @@
 @import "./components/main/math";
 @import "./components/main/buy-wood";
 @import "./components/main/company";
+
+//wood-window
+@import "./components/wood-window/intro-window";
 
 //footer 
 @import "./components/footer/backcall";
