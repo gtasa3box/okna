@@ -5,10 +5,10 @@
             padding: 142px 0 98px;
         }
         @media (min-width:1100px) and (max-width:1619px) {
-        
+            padding: 180px 0 140px;
         }
         @media (min-width:1620px) {
-              
+            padding: 245px 0 150px; 
         }
     }
     &__card {
@@ -21,10 +21,10 @@
             padding: 25px 281px 43px 30px;
         }
         @media (min-width:1100px) and (max-width:1619px) {
-        
+            padding: 30px 343px 51px 46px;
         }
         @media (min-width:1620px) {
-              
+            padding: 40px 553px 65px 78px;    
         }
     }
     &__text {
@@ -39,11 +39,11 @@
             font-size: 12px;
         }
         @media (min-width:1100px) and (max-width:1619px) {
-        
+            font-size: 12px;
         }
         @media (min-width:1620px) {
-              
-        }
+            font-size: 18px;   
+        }  
     }
     &__img {
         display: block;
@@ -68,10 +68,22 @@
             bottom: 42px;
         }
         @media (min-width:1100px) and (max-width:1619px) {
-        
+            width: 213px;
+            height: 279px;
+            top: initial;
+            left: initial;
+            transform: translateX(0);
+            right: 78px;
+            bottom: 51px;
         }
         @media (min-width:1620px) {
-              
+            width: 355px;
+            height: 465px;
+            top: initial;
+            left: initial;
+            transform: translateX(0);
+            right: 138px;
+            bottom: 36px;   
         }
     }
     &__btn {
@@ -92,10 +104,22 @@
             line-height: 16px;
         }
         @media (min-width:1100px) and (max-width:1619px) {
-        
+            right: initial;
+            width: 188px;
+            height: 42px;
+            left: 46px;
+            bottom: -21px;
+            font-size: 14px;
+            line-height: 19px;
         }
         @media (min-width:1620px) {
-              
+            right: initial;
+            width: 242px;
+            height: 54px;
+            left: 78px;
+            bottom: -27px;
+            font-size: 18px;
+            line-height: 24px;
         }
     }
 }
