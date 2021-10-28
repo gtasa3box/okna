@@ -1,0 +1,101 @@
+.card-block {
+    &__content {
+        padding: 245px 0 100px;
+        @media (min-width:601px) and (max-width:1099px) {
+            padding: 142px 0 98px;
+        }
+        @media (min-width:1100px) and (max-width:1619px) {
+        
+        }
+        @media (min-width:1620px) {
+              
+        }
+    }
+    &__card {
+        width: 100%;
+        position: relative;
+        padding: 96px 20px 27px;
+        background-color: #302825;
+        border-radius: 10px;
+        @media (min-width:601px) and (max-width:1099px) {
+            padding: 25px 281px 43px 30px;
+        }
+        @media (min-width:1100px) and (max-width:1619px) {
+        
+        }
+        @media (min-width:1620px) {
+              
+        }
+    }
+    &__text {
+        font-family: 'Roboto',sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 12px;
+        line-height: 150%;
+        letter-spacing: 0.02em;
+        color: rgba(255, 255, 255, 0.7);
+        @media (min-width:601px) and (max-width:1099px) {
+            font-size: 12px;
+        }
+        @media (min-width:1100px) and (max-width:1619px) {
+        
+        }
+        @media (min-width:1620px) {
+              
+        }
+    }
+    &__img {
+        display: block;
+        background-image: url(../img/window/1.png);
+        background-size: 120%;
+        background-repeat: no-repeat;
+        background-position: center;
+        width: 205px;
+        height: 267px;
+        filter: drop-shadow(0px 0px 30px rgba(0, 0, 0, 0.2));
+        position: absolute;
+        top:-190px;
+        left: 50%;
+        transform: translateX(-50%);
+        @media (min-width:601px) and (max-width:1099px) {
+            width: 222px;
+            height: 291px;
+            top: initial;
+            left: initial;
+            transform: translateX(0);
+            right: 32px;
+            bottom: 42px;
+        }
+        @media (min-width:1100px) and (max-width:1619px) {
+        
+        }
+        @media (min-width:1620px) {
+              
+        }
+    }
+    &__btn {
+        width: 166px;
+        height: 40px;
+        font-size: 14px;
+        line-height: 19px;
+        position: absolute;
+        right: 23px;
+        bottom: -20px;
+        @media (min-width:601px) and (max-width:1099px) {
+            right: initial;
+            width: 160px;
+            height: 35.7px;
+            left: 27px;
+            bottom: -17px;
+            font-size: 12px;
+            line-height: 16px;
+        }
+        @media (min-width:1100px) and (max-width:1619px) {
+        
+        }
+        @media (min-width:1620px) {
+              
+        }
+    }
+}
