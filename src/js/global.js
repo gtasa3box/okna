@@ -146,3 +146,11 @@ $('.slider-headsets').slick({
     }
   ]
 });
+
+//pads-click
+$('.pads-block__pad').on('click', function(){
+  $('.pads-block__pad').removeClass('active') 
+  $('.pads-block__oneblock').removeClass('active') 
+  $(this).addClass('active')
+  $($(this).data('target')).addClass('active')
+});

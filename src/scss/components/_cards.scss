@@ -224,3 +224,152 @@
         }
     }
 }
+
+//card-pads-block
+.card-pads-block {
+    width: 100%;
+    @media (min-width:601px) and (max-width:1099px) {
+        width: 349px;
+        margin: 0 15px;
+    }
+    @media (min-width:1100px) and (max-width:1619px) {
+        width: 305.35px;
+    }
+    @media (min-width:1620px) {
+        width: 493px;     
+    }
+    &:not(:last-child) {
+        margin-bottom: 40px;
+        @media (min-width:601px) and (max-width:1099px) {
+            margin-bottom: 30px;
+        }
+        @media (min-width:1100px) and (max-width:1619px) {
+            margin-bottom: 0;
+        }
+        @media (min-width:1620px) {
+            margin-bottom: 0; 
+        }
+    }
+    &__img {
+        width: 100%;
+        background-color: #302825;
+        border-radius: 10px;
+        height: 200px;
+        @media (min-width:601px) and (max-width:1099px) {
+            height: 204.59px;
+        }
+        @media (min-width:1100px) and (max-width:1619px) {
+            height: 179px;
+        }
+        @media (min-width:1620px) {
+            height: 289px;   
+        }
+        //one-window
+        &_one-window {
+            a {
+                display: block;
+                background-size: contain;
+                background-position: center;
+                background-repeat: no-repeat;
+                width: 78.04px;
+                height: 154.84px;
+                position: relative;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%,-50%);
+                @media (min-width:601px) and (max-width:1099px) {
+                    width: 89.2px;
+                    height: 176.98px;
+                }
+                @media (min-width:1100px) and (max-width:1619px) {
+                    width: 78.04px;
+                    height: 154.84px;
+                }
+                @media (min-width:1620px) {
+                    width: 126px;
+                    height: 250px;  
+                }
+            }
+        }
+    }
+    &__info {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        margin: 15px 0 20px;
+        @media (min-width:601px) and (max-width:1099px) {
+            margin: 17px 0 14px; 
+        }
+        @media (min-width:1100px) and (max-width:1619px) {
+            margin: 15px 0 12px;
+        }
+        @media (min-width:1620px) {
+            margin: 25px 0 20px;  
+        }
+        h3 {
+            font-family: 'Prata',sans-serif;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 14px;
+            line-height: 19px;
+            color: #FFFFFF;
+            @media (min-width:601px) and (max-width:1099px) {
+                font-size: 16px;
+                line-height: 22px;
+            }
+            @media (min-width:1100px) and (max-width:1619px) {
+                font-size: 15px;
+                line-height: 20px;
+            }
+            @media (min-width:1620px) {
+                font-size: 24px;
+                line-height: 33px;   
+            }
+        }
+        p {
+            font-family: 'Ubuntu',sans-serif;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 16px;
+            color: #FFFFFF;
+            @media (min-width:601px) and (max-width:1099px) {
+                font-size: 13px;
+                line-height: 15px;
+            }
+            @media (min-width:1100px) and (max-width:1619px) {
+                font-size: 12px;
+                line-height: 14px;
+            }
+            @media (min-width:1620px) {
+                font-size: 18px;
+                line-height: 21px;   
+            }
+        }
+    }
+    &__btns {
+        display: flex;
+        justify-content: space-between;
+        .btn {
+            width: 48%;
+            height: 40px;
+            font-size: 12px;
+            line-height: 16px;
+            @media (min-width:601px) and (max-width:1099px) {
+                height: 32.56px;
+                font-size: 12px;
+                line-height: 16px;
+            }
+            @media (min-width:1100px) and (max-width:1619px) {
+                height: 28.49px;
+                font-size: 10px;
+                line-height: 14px;
+            }
+            @media (min-width:1620px) {
+                height: 46px;
+                font-size: 16px;
+                line-height: 22px;  
+            }
+        }
+    }
+}

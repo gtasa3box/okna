@@ -1,0 +1,119 @@
+.pads-block {
+    padding-top: 40px;
+    @media (min-width:601px) and (max-width:1099px) {
+        padding-top: 60px;
+    }
+    @media (min-width:1100px) and (max-width:1619px) {
+        padding-top: 62px;
+    }
+    @media (min-width:1620px) {
+        padding-top: 86px;    
+    }
+    .wrapper {
+        position: relative;
+    }
+    &__content {
+        padding: 20px 0 80px;
+        @media (min-width:601px) and (max-width:1099px) {
+            padding: 40px 0 80px; 
+        }
+        @media (min-width:1100px) and (max-width:1619px) {
+            padding: 40px 0 125px;
+        }
+        @media (min-width:1620px) {
+            padding: 50px 0 150px;    
+        }
+    }
+    //pads
+    &__pads {
+        font-family: 'Ubuntu',sans-serif;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 12px;
+        line-height: 14px;
+        color: #FFFFFF;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 35px;
+        border-bottom: 1px solid #FFFFFF;
+        @media (min-width:601px) and (max-width:1099px) {
+            border-bottom: none;
+            position: absolute;
+            top: -10px;
+            right: 0;
+            font-size: 10px;
+            line-height: 11px;
+            width: 265px;
+        }
+        @media (min-width:1100px) and (max-width:1619px) {
+            border-bottom: none;
+            position: absolute;
+            top: -12px;
+            right: 0;
+            font-size: 12px;
+            line-height: 14px;
+            width: 311px;
+        }
+        @media (min-width:1620px) {
+            border-bottom: none;
+            position: absolute;
+            top: -13px;
+            right: 0;
+            font-size: 18px;
+            line-height: 21px;
+            width: 438px;   
+        }
+    }
+    &__pad {
+        padding: 0 8px;
+        padding-bottom: 10px;
+        transition: 0.3s ease;
+        margin-bottom: -2px;
+        cursor: pointer;
+        border-bottom: 3px solid transparent;
+        @media (min-width:601px) and (max-width:1099px) {
+            padding: 0 8px;
+            padding-bottom: 9px;
+        }
+        @media (min-width:1100px) and (max-width:1619px) {
+            padding: 0 8px;
+            padding-bottom: 10px;
+        }
+        @media (min-width:1620px) {
+            padding: 0 8px;
+            padding-bottom: 16px; 
+        }
+        &:hover {
+            opacity: 0.8;
+            border-bottom: 3px solid rgba(255,255,255,0.5);
+        }
+        &.active {
+            font-weight: 500;
+            border-bottom: 3px solid #FFFFFF;
+            cursor: default;
+            &:hover {
+                opacity: 1;
+                border-bottom: 3px solid #FFFFFF;
+            }
+        } 
+    }
+    //blocks
+    &__blocks {
+    }
+    &__oneblock {
+        display: none;
+        flex-wrap: wrap;
+        @media (min-width:601px) and (max-width:1099px) {
+            margin: 0 -15px;
+        }
+        @media (min-width:1100px) and (max-width:1619px) {
+            justify-content: space-between;
+        }
+        @media (min-width:1620px) {
+            justify-content: space-between; 
+        }
+        &.active {
+            display: flex;
+        }
+    }
+}
