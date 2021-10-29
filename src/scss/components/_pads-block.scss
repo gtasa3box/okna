@@ -115,5 +115,10 @@
         &.active {
             display: flex;
         }
+        &_wood-doors {
+            @media (max-width:600px) {
+                justify-content: space-between;
+            }
+        }
     }
 }

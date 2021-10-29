@@ -250,6 +250,18 @@
             margin-bottom: 0; 
         }
     }
+    &_wood-doors {
+        width: 163px;
+        @media (min-width:601px) and (max-width:1099px) {
+            width: 217.86px;
+        }
+        @media (min-width:1100px) and (max-width:1619px) {
+            width: 217.86px;
+        }
+        @media (min-width:1620px) {
+            width: 355px;
+        }
+    }
     &__img {
         width: 100%;
         background-color: #302825;
@@ -264,6 +276,7 @@
         @media (min-width:1620px) {
             height: 289px;   
         }
+
         //one-window
         &_one-window {
             a {
@@ -291,11 +304,107 @@
                 }
             }
         }
+
+        //two-window
+        &_two-window {
+            a {
+                display: block;
+                background-size: contain;
+                background-position: center;
+                background-repeat: no-repeat;
+                width: 186px;
+                height: 172px;
+                position: relative;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%,-50%);
+                @media (min-width:601px) and (max-width:1099px) {
+                    width: 219.23px;
+                    height: 204.38px;
+                }
+                @media (min-width:1100px) and (max-width:1619px) {
+                    width: 191.81px;
+                    height: 178.82px;
+                }
+                @media (min-width:1620px) {
+                    width: 310px;
+                    height: 289px;  
+                }
+            }
+        }
+
+        //three-window
+        &_three-window {
+            a {
+                display: block;
+                background-size: contain;
+                background-position: center;
+                background-repeat: no-repeat;
+                width: 263px;
+                height: 144px;
+                position: relative;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%,-50%);
+                @media (min-width:601px) and (max-width:1099px) {
+                    width: 257.16px;
+                    height: 140.58px;
+                }
+                @media (min-width:1100px) and (max-width:1619px) {
+                    width: 225px;
+                    height: 123px;
+                }
+                @media (min-width:1620px) {
+                    width: 363px;
+                    height: 199px;
+                }
+            }
+        }
+
+        //wood-window
+        &_wood-doors {
+            height: 234px;
+            @media (min-width:601px) and (max-width:1099px) {
+                height: 312.98px;
+            }
+            @media (min-width:1100px) and (max-width:1619px) {
+                height: 315.56px;
+            }
+            @media (min-width:1620px) {
+                height: 510px;
+            }
+            a {
+                display: block;
+                background-size: contain;
+                background-position: center;
+                background-repeat: no-repeat;
+                width: 107px;
+                height: 189px;
+                position: relative;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%,-50%);
+                @media (min-width:601px) and (max-width:1099px) {
+                    width: 142.99px;
+                    height: 252.23px;
+                }
+                @media (min-width:1100px) and (max-width:1619px) {
+                    width: 144.17px;
+                    height: 254.31px;
+                }
+                @media (min-width:1620px) {
+                    width: 233px;
+                    height: 411px;
+                }
+            }
+        }
+
     }
     &__info {
         width: 100%;
         display: flex;
         justify-content: space-between;
+        align-items: center;
         margin: 15px 0 20px;
         @media (min-width:601px) and (max-width:1099px) {
             margin: 17px 0 14px; 
@@ -346,6 +455,20 @@
                 line-height: 21px;   
             }
         }
+        &_wood-doors {
+            @media (max-width:601px) {
+                flex-direction: column;
+                h3 {
+                    width: 100%;
+                    text-align: left;
+                }
+                p {
+                    width: 100%;
+                    text-align: right;
+                    margin-top: 10px;
+                }
+            }
+        }
     }
     &__btns {
         display: flex;
@@ -369,6 +492,17 @@
                 height: 46px;
                 font-size: 16px;
                 line-height: 22px;  
+            }
+        }
+        &_wood-doors {
+            @media (max-width:601px) {
+                flex-direction: column;
+                .btn {
+                    width: 100%;
+                    &:last-child {
+                        margin-top: 15px;
+                    }
+                }
             }
         }
     }
