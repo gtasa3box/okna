@@ -1,0 +1,180 @@
+.contacts-map {
+    padding: 50px 0 402px;
+    @media (min-width:601px) and (max-width:1099px) {
+        padding: 60px 0 300px;
+    }
+    @media (min-width:1100px) and (max-width:1619px) {
+        padding: 80px 0 64px; 
+    }
+    @media (min-width:1620px) {
+        padding: 71px 0 49px; 
+    }
+    &__content {
+        position: relative;
+    }
+    iframe {
+        width: 100%;
+        height: 400px;
+        @media (min-width:601px) and (max-width:1099px) {
+            height: 300px;
+        }
+        @media (min-width:1100px) and (max-width:1619px) {
+            height: 401px;
+        }
+        @media (min-width:1620px) {
+            height: 533px; 
+        }
+    }
+    .wrapper {
+        position: relative;
+    }
+    &__info {
+        position: absolute;
+        width: 100%;
+        background-color: #302825;
+        border-radius: 10px;
+        padding: 30px 20px;
+        left: 0;
+        bottom: -341px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        @media (min-width:601px) and (max-width:1099px) {
+            padding: 30px 30px;
+            flex-direction: row;
+            justify-content: space-between;
+            bottom: -220px;
+        }
+        @media (min-width:1100px) and (max-width:1619px) {
+            padding: 40px 35px;
+            flex-direction: row;
+            justify-content: space-between;
+            bottom: -64px;
+            left: initial;
+            right: 0;
+            width: 475px;
+        }
+        @media (min-width:1620px) {
+            padding: 52px 57px; 
+            flex-direction: row;
+            justify-content: space-between;
+            bottom: -49px;
+            left: initial;
+            right: 0;
+            width: 632px;
+        }
+    }
+    .title {
+        width: 100%;
+    }
+    &__adress {
+        font-family: 'Ubuntu',sans-serif;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 12px;
+        line-height: 14px;
+        color: #FFFFFF;
+        margin: 15px 0 20px;
+        max-width: 201px;
+        @media (min-width:601px) and (max-width:1099px) {
+            width: 100%;
+            max-width: initial;
+            margin: 10px 0 23px;
+            font-size: 14px;
+            line-height: 16px;
+        }
+        @media (min-width:1100px) and (max-width:1619px) {
+            width: 100%;
+            max-width: initial;
+            margin: 20px 0 35px;
+            font-size: 14px;
+            line-height: 16px;
+        }
+        @media (min-width:1620px) {
+            width: 100%;
+            max-width: initial;
+            margin: 25px 0 43px;
+            font-size: 18px;
+            line-height: 21px;
+        }
+        span {
+            font-weight: 400;
+        }
+    }
+    &__numbers {
+        display: flex;
+        flex-direction: column;
+        @media (min-width:601px) and (max-width:1099px) {
+            flex-direction: row;
+            width: 412px;
+            justify-content: space-between;
+        }
+        a {
+            margin-left: 24px;
+            margin-bottom: 15px;
+            @media (min-width:601px) and (max-width:1099px) {
+                margin-bottom: 31px;
+            }
+            @media (min-width:1100px) and (max-width:1619px) {
+                margin-bottom: 15px;
+            }
+            @media (min-width:1620px) {
+                margin-left: 41px;
+                margin-bottom: 20px;  
+            }
+        }
+    }
+    &__mail {
+        a {
+            margin-left: 24px;
+            text-decoration: underline;
+        }
+    }
+    &__week {
+        p {
+            font-family: 'Ubuntu',sans-serif;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 16px;
+            color: #FFFFFF;
+            margin: 40px 0 20px;
+            @media (min-width:601px) and (max-width:1099px) {
+                margin-top: 0;
+                margin-bottom: 24px;
+            }
+            @media (min-width:1100px) and (max-width:1619px) {
+                margin-top: 20px;
+                margin-bottom: 24px;
+            }
+            @media (min-width:1620px) {
+                margin-top: 23px; 
+                margin-bottom: 30px;
+            }
+        }
+        a {
+            display: block;
+            background-image: url(../img/contacts/week.svg);
+            background-size: contain;
+            background-position: center;
+            background-repeat: no-repeat;
+            width: 305px;
+            height: 61px;
+            @media (min-width:601px) and (max-width:1099px) {
+                width: 300px;
+                height: 54px; 
+                background-position:left;
+            }
+            @media (min-width:1100px) and (max-width:1619px) {
+                background-position:left;
+                width: 300px;
+                height: 54px;
+            }
+            @media (min-width:1620px) {
+                background-position:left;
+                width: 368px;
+                height: 73.39px;  
+            }
+        }
+    }
+}
