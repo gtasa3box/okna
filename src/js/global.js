@@ -154,3 +154,7 @@ $('.pads-block__pad').on('click', function(){
   $(this).addClass('active')
   $($(this).data('target')).addClass('active')
 });
+
+//double click nav
+$("#nav-double-click").one("click", false);
+$("#nav-double-click-2").one("click", false);

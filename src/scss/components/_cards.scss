@@ -456,7 +456,7 @@
             }
         }
         &_wood-doors {
-            @media (max-width:601px) {
+            // @media (max-width:601px) {
                 flex-direction: column;
                 h3 {
                     width: 100%;
@@ -467,7 +467,7 @@
                     text-align: right;
                     margin-top: 10px;
                 }
-            }
+            // }
         }
     }
     &__btns {
@@ -504,6 +504,140 @@
                     }
                 }
             }
+        }
+    }
+}
+
+//gallery-card 
+.card-gallery {
+    width: 47%;
+    height: 129px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    position: relative;
+    @media (min-width:601px) and (max-width:1099px) {
+        width: 30%;
+        height: 173.86px;
+        margin-bottom: 36px;
+    }
+    @media (min-width:1100px) and (max-width:1619px) {
+        width: 22%;
+        height: 175.11px;
+        margin-bottom: 35px;
+    }
+    @media (min-width:1620px) {
+        width: 22%;
+        height: 283px;
+        margin-bottom: 63px;    
+    }
+    &__img {
+        display: block;
+        background-size: 110%;
+        background-position: center;
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 100%;
+        transition: 0.3s ease;
+        border-radius: 10px;
+        &:hover {
+            background-size: 120%;
+        }
+    }
+    &__title {
+        font-family: 'Prata',sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 12px;
+        line-height: 16px;
+        color: #FFFFFF;
+        position: absolute;
+        left: 10px;
+        bottom: 10px;
+        @media (min-width:601px) and (max-width:1099px) {
+            left: 15px;
+            bottom: 15px;
+            font-size: 13px;
+            line-height: 18px;
+        }
+        @media (min-width:1100px) and (max-width:1619px) {
+            font-size: 13px;
+            line-height: 18px;
+            left: 15px;
+            bottom: 15px;
+        }
+        @media (min-width:1620px) {
+            font-size: 20px;
+            line-height: 27px;
+            left: 25px;
+            bottom: 25px;
+        }
+        &_infoblock {
+            position: relative;
+            bottom: initial;
+            left: initial;
+            margin: 6px 0 10px;
+            @media (min-width:1620px) {
+                margin: 5px 0 20px;
+            }
+        }
+    }
+    &__locate {
+        font-family: 'Ubuntu',sans-serif;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 9px;
+        line-height: 150%;
+        letter-spacing: 0.02em;
+        color: #FFFFFF;
+        @media (min-width:1620px) {
+            font-size: 12px; 
+        }
+    }
+    &__info {
+        font-family: 'Ubuntu',sans-serif;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 10px;
+        line-height: 150%;
+        letter-spacing: 0.02em;
+        color: rgba(255, 255, 255, 0.7);
+        @media (min-width:1620px) {
+            font-size: 14px;  
+        }
+    }
+    &_big {
+        width: 100%;
+        height: 170px;
+        margin-top: 10px;
+        @media (min-width:601px) and (max-width:1099px) {
+            width: 48%;
+            height: 177.45px;
+            margin-top: 0;
+        }
+        @media (min-width:1100px) and (max-width:1619px) {
+            height: 241.31px;
+            width: 48%;
+            margin-top: 0;
+        }
+        @media (min-width:1620px) {
+            height: 390px;
+            width: 48%;
+            margin-top: 0;  
+        }
+    }
+    &_infoblock {
+        background-color: #302825;
+        padding: 18px 15px;
+        @media (max-width:601px) {
+            display: none;
+        }
+        @media (min-width:1620px) {
+            padding: 30px 25px;  
+        }
+    }
+    &_smallpc {
+        @media (max-width:1099px) {
+            display: none;
         }
     }
 }
