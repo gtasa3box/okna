@@ -156,5 +156,8 @@ $('.pads-block__pad').on('click', function(){
 });
 
 //double click nav
-$("#nav-double-click span").one("click", false);
-$("#nav-double-click-2 span").one("click", false);
+// $("#nav-double-click span").one("click", false);
+// $("#nav-double-click-2 span").one("click", false);
+jQuery('#nav-double-click-2 span , #nav-double-click span').on('click', function (e) {
+  e.preventDefault();
+});
