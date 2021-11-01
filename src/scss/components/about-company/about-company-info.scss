@@ -1,0 +1,128 @@
+.about-company-info {
+    &__content {
+        padding: 50px 0 60px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        @media (min-width:601px) and (max-width:1099px) {
+            padding: 45px 0 60px;
+        }
+        @media (min-width:1100px) and (max-width:1619px) {
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            padding: 61px 0 126px;
+        }
+        @media (min-width:1620px) {
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            padding: 77px 0 185px;  
+        }
+    }
+    &__img {
+        background-image: url(../img/about-company/1.png);
+        background-size: 110%;
+        background-position: center;
+        background-repeat: no-repeat;
+        width: 345px;
+        height: 200px;
+        border-radius: 10px;
+        margin-bottom: 73px;
+        transition: 0.3s ease;
+        position: relative;
+        @media (min-width:601px) and (max-width:1099px) {
+            height: 250px;
+            width: 100%;
+            margin-bottom: 53px;
+        }
+        @media (min-width:1100px) and (max-width:1619px) {
+            width: 476.44px;
+            height: 275.96px;
+            margin-bottom: 50px;
+        }
+        @media (min-width:1620px) {
+            width: 770px;
+            height: 446px;
+            margin-bottom: 34px;
+        }
+        &::before {
+            content: '';
+            position: absolute;
+            background-image: url(../img/play.svg);
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+            width: 59px;
+            height: 59px;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            @media (min-width:601px) and (max-width:1099px) {
+                width: 81.06px;
+                height: 81.06px;
+            }
+            @media (min-width:1100px) and (max-width:1619px) {
+                width: 81.06px;
+                height: 81.06px;
+            }
+            @media (min-width:1620px) {
+                width: 131px;
+                height: 131px; 
+            }
+        }
+        &:hover {
+            background-size: 120%;
+        }
+        a {
+            display: block;
+            position: absolute;
+            background-image: url(../img/about-company/2.png);
+            background-size: 100%;
+            background-position: center;
+            background-repeat: no-repeat;
+            width: 162px;
+            height: 95px;
+            border-radius: 10px;
+            bottom: -48px;
+            right: 20px;
+            pointer-events: none;
+            @media (min-width:601px) and (max-width:1099px) {
+                width: 219.66px;
+                height: 125.61px;
+                bottom: -33px;
+                right: 34px;
+            }
+            @media (min-width:1100px) and (max-width:1619px) {
+                width: 219.66px;
+                height: 125.61px;
+                bottom: -74px;
+                right: -85px;
+            }
+            @media (min-width:1620px) {
+                width: 355px;
+                height: 203px;  
+                bottom: -119px;
+                right: -138px;
+            }
+        }
+    }
+    &__text {
+        font-family: 'Ubuntu',sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 12px;
+        line-height: 150%;
+        letter-spacing: 0.02em;
+        color: rgba(255, 255, 255, 0.7);
+        @media (min-width:1100px) and (max-width:1619px) {
+            width: 47%;
+            max-width: 391px;
+        }
+        @media (min-width:1620px) {
+            width: 47%;
+            max-width: 632px;
+            font-size: 18px;
+        }
+    }
+}
