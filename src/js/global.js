@@ -161,3 +161,84 @@ $('.pads-block__pad').on('click', function(){
 jQuery('#nav-double-click-2 span , #nav-double-click span').on('click', function (e) {
   e.preventDefault();
 });
+
+//slider-fitting-window
+$('.slider-fitting-window').slick({
+  dots: true,
+  infinite: true,
+  speed: 300,
+  slidesToShow: 3,
+  slidesToScroll: 2,
+  responsive: [
+    {
+      breakpoint: 1619,
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 2,
+        infinite: true,
+        dots: true
+      }
+    },
+    {
+      breakpoint: 1099,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 2,
+        infinite: true,
+        dots: true,
+        arrows: false
+      }
+    },
+    {
+      breakpoint: 600,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 1,
+        infinite: true,
+        dots: true,
+        arrows: false
+      }
+    }
+  ]
+});
+
+//slider-fitting-door
+$('.slider-fittings-door').slick({
+  dots: true,
+  infinite: true,
+  speed: 300,
+  slidesToShow: 4,
+  slidesToScroll: 2,
+  responsive: [
+    {
+      breakpoint: 1619,
+      settings: {
+        slidesToShow: 4,
+        slidesToScroll: 2,
+        infinite: true,
+        dots: true
+      }
+    },
+    {
+      breakpoint: 1099,
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 2,
+        infinite: true,
+        dots: true,
+        arrows: false
+      }
+    },
+    {
+      breakpoint: 600,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 1,
+        infinite: true,
+        dots: true,
+        arrows: false
+      }
+    }
+  ]
+});
+

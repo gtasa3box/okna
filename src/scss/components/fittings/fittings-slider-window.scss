@@ -1,0 +1,12 @@
+.fittings-slider-window {
+    position: relative;
+    &__slider {
+        padding: 40px 0 80px;
+        @media (min-width:1100px) and (max-width:1619px) {
+            padding: 40px 0 120px;  
+        }
+        @media (min-width:1620px) {
+            padding: 50px 0 150px; 
+        }
+    }
+}

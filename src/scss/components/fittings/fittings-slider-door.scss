@@ -1,0 +1,11 @@
+.fittings-slider-door {
+    &__slider {
+        padding: 40px 0 80px;
+        @media (min-width:1100px) and (max-width:1619px) {
+            padding: 40px 0 100px;
+        }
+        @media (min-width:1620px) {
+            padding: 50px 0 150px; 
+        }
+    }
+}
