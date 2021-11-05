@@ -1,0 +1,336 @@
+.popup-application {
+    display: none;
+    background-color: white;
+    width: 344px;
+    height: 652px;
+    padding: 30px 22px;
+    @media (min-width:601px) and (max-width:1099px) {
+        padding: 50px 74px;
+        width: 450px;
+        height: 622px;
+    }
+    @media (min-width:1100px) and (max-width:1619px) {
+        width: 450px;
+        height: 652px;
+        padding: 50px 108px 78px;
+    }
+    @media (min-width:1620px) {
+        height: 936px; 
+        width: 700px;
+        padding: 60px 172px 69px;
+    }
+    &__form {
+        display: flex;
+        flex-direction: column;
+    }
+    &__title {
+        font-family: 'Prata',sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 24px;
+        line-height: 33px;
+        text-align: center;
+        color: #000000;
+        margin-bottom: 20px;
+        @media (min-width:601px) and (max-width:1099px) {
+            margin-bottom: 30px;
+        }
+        @media (min-width:1100px) and (max-width:1619px) {
+            margin-bottom: 30px; 
+        }
+        @media (min-width:1620px) {
+            font-size: 30px;
+            line-height: 41px;
+            margin-bottom: 32px;
+        }
+    }
+    input {
+        background: #FFFFFF;
+        box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.15);
+        height: 50px;
+        margin-bottom: 20px;
+        width: 100%;
+        border: none;
+        outline: none;
+        padding: 17px 20px;
+        @media (min-width:601px) and (max-width:1099px) {
+            height: 34px;
+            padding: 10px 14px;
+        }
+        @media (min-width:1100px) and (max-width:1619px) {
+            height: 33.57px;
+            padding: 10px 14px;
+            margin-bottom: 18px;
+        }
+        @media (min-width:1620px) {
+            height: 54px;
+            padding: 16px 24px;   
+            margin-bottom: 30px; 
+        }
+        &::placeholder {
+            font-family: 'Ubuntu',sans-serif;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 14px;
+            line-height: 16px;
+            letter-spacing: 0.02em;
+            color: rgba(0, 0, 0, 0.5);
+            @media (min-width:601px) and (max-width:1099px) {
+                font-size: 10px;
+                line-height: 11px;
+            }
+            @media (min-width:1100px) and (max-width:1619px) {
+                font-size: 10px;
+                line-height: 11px;
+            }
+            @media (min-width:1620px) {
+                font-size: 16px;
+                line-height: 18px; 
+            }
+        }
+    }
+    textarea {
+        resize: none;
+        background: #FFFFFF;
+        box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.15);
+        height: 200px;
+        width: 100%;
+        padding: 17px 20px;
+        @media (min-width:601px) and (max-width:1099px) {
+            height: 193px;
+            padding: 10px 14px;
+        }
+        @media (min-width:1100px) and (max-width:1619px) {
+            padding: 10px 14px;
+            height: 192.71px;
+        }
+        @media (min-width:1620px) {
+            height: 310px;
+            padding: 16px 24px;  
+        }
+        &::placeholder {
+            font-family: 'Ubuntu',sans-serif;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 14px;
+            line-height: 16px;
+            letter-spacing: 0.02em;
+            color: rgba(0, 0, 0, 0.5);
+            @media (min-width:601px) and (max-width:1099px) {
+                font-size: 10px;
+                line-height: 11px;
+            }
+            @media (min-width:1100px) and (max-width:1619px) {
+                font-size: 10px;
+                line-height: 11px;
+            }
+            @media (min-width:1620px) {
+                font-size: 16px;
+                line-height: 18px;
+            }
+        }
+    }
+    p {
+        font-family: 'Ubuntu',sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 12px;
+        line-height: 150%;
+        text-align: center;
+        color: rgba(0, 0, 0, 0.7);
+        max-width: 233px;
+        margin: 20px auto;
+        @media (min-width:1620px) {
+            font-size: 18px;
+            margin: 30px auto;
+            max-width: 341px;
+        }
+    }
+    &__btn {
+        -webkit-appearance: none;
+        -moz-appearance: textfield;
+        height: 44px;
+        width: 100%;
+        font-family: 'Prata',sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 19px;
+        text-align: center;
+        letter-spacing: 0.02em;
+        color: #1C1512;
+        border: none;
+        @media (min-width:601px) and (max-width:1099px) {
+            height: 36px;
+            font-size: 13px;
+            line-height: 18px;
+        }
+        @media (min-width:1100px) and (max-width:1619px) {
+            height: 36.06px;
+            font-size: 13px;
+            line-height: 18px;
+        }
+        @media (min-width:1620px) {
+            height: 58px;
+            font-size: 20px;
+            line-height: 27px;
+        }
+    }
+    input::-webkit-outer-spin-button,
+    input::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+    }
+    input[type=number] {
+        -moz-appearance: textfield;
+    }
+}
+
+//backcall
+.popup-backcall {
+    display: none;
+    background-color: white;
+    width: 344px;
+    height: 370px;
+    padding: 30px 22px 42px;
+    @media (min-width:601px) and (max-width:1099px) {
+        padding: 50px 73px 83px;
+        width: 450px;
+        height: 394px;
+    }
+    @media (min-width:1100px) and (max-width:1619px) {
+        width: 450px;
+        height: 382px;
+        padding: 50px 108px 70px;
+    }
+    @media (min-width:1620px) {
+        height: 512px; 
+        width: 700px;
+        padding: 60px 172px 69px;
+    }
+    &__form {
+        display: flex;
+        flex-direction: column;
+    }
+    &__title {
+        font-family: 'Prata',sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 24px;
+        line-height: 33px;
+        text-align: center;
+        color: #000000;
+        margin-bottom: 20px;
+        @media (min-width:601px) and (max-width:1099px) {
+            margin-bottom: 30px;
+        }
+        @media (min-width:1100px) and (max-width:1619px) {
+            margin-bottom: 30px; 
+        }
+        @media (min-width:1620px) {
+            font-size: 30px;
+            line-height: 41px;
+            margin-bottom: 32px;
+        }
+    }
+    input {
+        background: #FFFFFF;
+        box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.15);
+        height: 50px;
+        margin-bottom: 20px;
+        width: 100%;
+        border: none;
+        outline: none;
+        padding: 17px 20px;
+        @media (min-width:601px) and (max-width:1099px) {
+            height: 34px;
+            padding: 10px 14px;
+        }
+        @media (min-width:1100px) and (max-width:1619px) {
+            height: 33.57px;
+            padding: 10px 14px;
+            margin-bottom: 18px;
+        }
+        @media (min-width:1620px) {
+            height: 54px;
+            padding: 16px 24px;   
+            margin-bottom: 30px; 
+        }
+        &::placeholder {
+            font-family: 'Ubuntu',sans-serif;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 14px;
+            line-height: 16px;
+            letter-spacing: 0.02em;
+            color: rgba(0, 0, 0, 0.5);
+            @media (min-width:601px) and (max-width:1099px) {
+                font-size: 10px;
+                line-height: 11px;
+            }
+            @media (min-width:1100px) and (max-width:1619px) {
+                font-size: 10px;
+                line-height: 11px;
+            }
+            @media (min-width:1620px) {
+                font-size: 16px;
+                line-height: 18px; 
+            }
+        }
+    }
+    #phone3 {
+        padding: 17px 17px 17px 71px;
+    }
+    p {
+        font-family: 'Ubuntu',sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 12px;
+        line-height: 150%;
+        text-align: center;
+        color: rgba(0, 0, 0, 0.7);
+        max-width: 233px;
+        margin: 20px auto;
+        @media (min-width:1620px) {
+            font-size: 18px;
+            margin: 30px auto;
+            max-width: 341px;
+        }
+    }
+    &__btn {
+        -webkit-appearance: none;
+        -moz-appearance: textfield;
+        height: 44px;
+        width: 100%;
+        font-family: 'Prata',sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 19px;
+        text-align: center;
+        letter-spacing: 0.02em;
+        color: #1C1512;
+        border: none;
+        @media (min-width:601px) and (max-width:1099px) {
+            height: 36px;
+            font-size: 13px;
+            line-height: 18px;
+        }
+        @media (min-width:1100px) and (max-width:1619px) {
+            height: 36.06px;
+            font-size: 13px;
+            line-height: 18px;
+        }
+        @media (min-width:1620px) {
+            height: 58px;
+            font-size: 20px;
+            line-height: 27px;
+        }
+    }
+    input::-webkit-outer-spin-button,
+    input::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+    }
+    input[type=number] {
+        -moz-appearance: textfield;
+    }
+}
