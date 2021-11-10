@@ -242,3 +242,12 @@ $('.slider-fittings-door').slick({
   ]
 });
 
+//math
+var num1;
+var num2;
+function math()
+{
+  num1 = document.getElementById("width1").value;
+  num2 = document.getElementById("height1").value;
+  document.getElementById("result1").innerHTML = num1 * num2;
+}
