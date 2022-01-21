@@ -113,12 +113,16 @@
         @media (min-width:601px) and (max-width:1099px) {
             position: absolute;
             right: 0;
-            bottom: 20px;
+            bottom: initial;
+            top: 50%;
+            transform: translateY(-50%);
         }
         @media (min-width:1100px) and (max-width:1619px) {
             position: absolute;
             right: 0;
-            bottom: 30px;
+            bottom: initial;
+            top: 50%;
+            transform: translateY(-50%);
         }
         @media (min-width:1620px) {
             position: absolute;
