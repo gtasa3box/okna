@@ -251,3 +251,43 @@ function math()
   num2 = document.getElementById("height1").value;
   document.getElementById("result1").innerHTML = num1 * num2;
 }
+
+//slider-fitting-window
+$('.where-applicable__slider').slick({
+  dots: false,
+  infinite: true,
+  speed: 300,
+  slidesToShow: 3,
+  slidesToScroll: 2,
+  responsive: [
+    {
+      breakpoint: 1619,
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 2,
+        infinite: true,
+        dots: false
+      }
+    },
+    {
+      breakpoint: 1099,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 2,
+        infinite: true,
+        dots: false,
+        arrows: false
+      }
+    },
+    {
+      breakpoint: 600,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 1,
+        infinite: true,
+        dots: true,
+        arrows: false
+      }
+    }
+  ]
+});
