@@ -1,12 +1,48 @@
 .new-benefits-window {
+    @media (max-width:600px) {
+        padding-bottom: 30px;
+    }
+    @media (min-width:601px) and (max-width:1099px) {
+        padding: 0 0 60px;
+    }
+    @media (min-width:1100px) and (max-width:1619px) {
+        padding-bottom: 70px;
+    }
+    .title {
+        @media (max-width:600px) {
+            display: none;
+        }
+        @media (min-width:601px) and (max-width:1099px) {
+            display: none;
+        }
+    }
     &__content {
         padding: 90px 0 180px;
         display: flex;
         justify-content: space-between;
+        @media (max-width:600px) {
+            display: none;
+        }
+        @media (min-width:601px) and (max-width:1099px) {
+            display: none;
+        }
+        @media (min-width:1100px) and (max-width:1619px) {
+            padding: 60px 0 0; 
+        }
     }
     &__elem {
         display: flex;
         align-items: center;
+        @media (max-width:600px) {
+            
+        }
+        @media (min-width:601px) and (max-width:1099px) {
+        
+        }
+        @media (min-width:1100px) and (max-width:1619px) {
+            flex-direction: column;
+            max-width: 303px;
+        }
     }
     &__img {
         display: block;
@@ -17,9 +53,29 @@
         height: 140px;
         margin-right: 30px;
         flex: none;
+        @media (max-width:600px) {
+            
+        }
+        @media (min-width:601px) and (max-width:1099px) {
+        
+        }
+        @media (min-width:1100px) and (max-width:1619px) {
+            width: 100px;
+            height: 100px;
+            margin-right: 0;
+        }
     }
     &__info {
         max-width: 323px;
+        @media (max-width:600px) {
+            
+        }
+        @media (min-width:601px) and (max-width:1099px) {
+        
+        }
+        @media (min-width:1100px) and (max-width:1619px) {
+            max-width: initial;
+        }
         h4 {
             font-family: 'Prata',sans-serif;
             font-style: normal;
@@ -28,6 +84,16 @@
             line-height: 24px;
             color: #FFD776;
             margin-bottom: 10px;
+            @media (max-width:600px) {
+            
+            }
+            @media (min-width:601px) and (max-width:1099px) {
+            
+            }
+            @media (min-width:1100px) and (max-width:1619px) {
+                text-align: center;
+                margin: 30px 0 10px;
+            }
         }
         p {
             font-family: 'Roboto',sans-serif;
@@ -36,12 +102,54 @@
             font-size: 16px;
             line-height: 24px;
             color: #FFFFFF;
+            @media (max-width:600px) {
+            
+            }
+            @media (min-width:601px) and (max-width:1099px) {
+            
+            }
+            @media (min-width:1100px) and (max-width:1619px) {
+                text-align: center;
+            }
         }
     }
     &__img-back {
         display: none;
-        background-image: url(../img/new-benefits/back.jpg);
+        background-image: url(../img/wood-window/new-benefits/back.png);
+        border-radius: 10px;
         background-size: cover;
         background-position: center;
+        position: relative;
+        background-repeat: no-repeat;
+        @media (max-width:600px) {
+            display: block;
+            height: 250px;
+            width: 100%;
+            background-position: 30px 0;
+            background-image: url(../img/wood-window/new-benefits/back-mob.png);  
+        }
+        @media (min-width:601px) and (max-width:1099px) {
+            display: block;
+            height: 360px;
+            width: 100%;
+            background-position: 30px 0;
+        }
+        @media (min-width:1100px) and (max-width:1619px) {
+            display: block;
+            height: 355px;
+            width: 100%;
+            margin-top: 100px;
+            background-position: 30px 0;
+        }
+        &:before {
+            content: '';
+            position: absolute;
+            width: 97%;
+            height: 100%;
+            border: 2px solid #FAC136;
+            border-radius: 10px;
+            left: 0;
+            top:-30px
+        }
     }
 }

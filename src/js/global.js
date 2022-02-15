@@ -272,17 +272,18 @@ $('.where-applicable__slider').slick({
     {
       breakpoint: 1099,
       settings: {
-        slidesToShow: 2,
-        slidesToScroll: 2,
+        slidesToShow: 3,
+        slidesToScroll: 1,
         infinite: true,
-        dots: false,
-        arrows: false
+        dots: true,
+        arrows: false,
+        variableWidth: true
       }
     },
     {
       breakpoint: 600,
       settings: {
-        slidesToShow: 2,
+        slidesToShow: 1,
         slidesToScroll: 1,
         infinite: true,
         dots: true,
