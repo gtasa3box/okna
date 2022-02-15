@@ -1,20 +1,36 @@
 .specifications {
     &__grid {
-        // display: grid;
-        // grid-template-columns: repeat(3, minmax(0px, 1fr));
-        // gap: 1.5rem;
-        // grid-auto-rows: minmax(100px, auto);
-        // grid-gap: 1.5rem;
         padding: 80px 0 120px;
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
         max-height: 700px;
+        @media (max-width:600px) {
+            padding: 30px 0 40px;
+            max-height: initial;
+        }
+        @media (min-width:601px) and (max-width:1099px) {
+            padding: 40px 0 50px;
+            max-height: 740px;
+        }
+        @media (min-width:1100px) and (max-width:1619px) {
+            padding: 60px 0 70px;
+            max-height: 780px;
+        }
     }
     &__elem {
         display: flex;
         align-items: center;
         margin-bottom: 30px;
+        @media (max-width:600px) {
+            margin-bottom: 10px;
+        }
+        @media (min-width:601px) and (max-width:1099px) {
+            margin-bottom: 20px;
+        }
+        @media (min-width:1100px) and (max-width:1619px) {
+            margin-bottom: 20px;
+        }
     }
     &__img {
         display: block;
@@ -34,6 +50,15 @@
             line-height: 24px;
             color: #FFD776;
             margin-bottom: 5px;
+            @media (max-width:600px) {
+                font-size: 16px;
+            }
+            @media (min-width:601px) and (max-width:1099px) {
+                font-size: 16px
+            }
+            @media (min-width:1100px) and (max-width:1619px) {
+                font-size: 16px;
+            }
         }
         p {
             font-family: 'Roboto',sans-serif;
@@ -42,6 +67,15 @@
             font-size: 16px;
             line-height: 24px;
             color: #FFFFFF;
+            @media (max-width:600px) {
+                font-size: 15px;
+            }
+            @media (min-width:601px) and (max-width:1099px) {
+                font-size: 15px;
+            }
+            @media (min-width:1100px) and (max-width:1619px) {
+                font-size: 15px;
+            }
         }
     }
 }
