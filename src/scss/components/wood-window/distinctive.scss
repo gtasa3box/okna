@@ -1,6 +1,15 @@
 .distinctive {
     &__grid {
         padding: 60px 0 120px;
+        @media (max-width:600px) {
+            padding: 20px 0 30px;   
+        }
+        @media (min-width:601px) and (max-width:1099px) {
+            padding: 40px 0 50px;
+        }
+        @media (min-width:1100px) and (max-width:1619px) {
+            padding: 40px 0 70px;
+        }
     }
     &__info {
         font-family: 'Roboto',sans-serif;
@@ -10,12 +19,36 @@
         line-height: 28px;
         letter-spacing: 0.02em;
         color: #FFFFFF;
+        @media (max-width:600px) {
+            font-size: 14px;
+            line-height: 22px;
+        }
+        @media (min-width:601px) and (max-width:1099px) {
+            font-size: 15px;
+            line-height: 24px;
+        }
+        @media (min-width:1100px) and (max-width:1619px) {
+            font-size: 16px;
+            line-height: 26px;
+        }
     }
     &__brown-block {
         background-color: #302825;
         border-radius: 10px;
         padding: 50px;
         margin: 50px 0 130px;
+        @media (max-width:600px) {
+            padding: 30px;
+            margin: 25px 0 60px;
+        }
+        @media (min-width:601px) and (max-width:1099px) {
+            padding: 30px;
+            margin: 50px 0 140px;
+        }
+        @media (min-width:1100px) and (max-width:1619px) {
+            padding: 40px 50px;
+            margin: 50px 0 100px;
+        }
         h3 {
             font-family: 'Prata',sans-serif;
             font-style: normal;
@@ -24,6 +57,21 @@
             line-height: 34px;
             color: #FFFFFF;
             margin-bottom: 24px;
+            @media (max-width:600px) {
+                font-size: 16px;
+                line-height: 24px;
+                margin-bottom: 20px;
+            }
+            @media (min-width:601px) and (max-width:1099px) {
+                font-size: 16px;
+                line-height: 26px;
+                margin-bottom: 24px;
+            }
+            @media (min-width:1100px) and (max-width:1619px) {
+                font-size: 18px;
+                line-height: 28px;
+                margin-bottom: 18px;
+            }
         }
         li {
             list-style-type: none;
@@ -33,6 +81,14 @@
             font-size: 16px;
             line-height: 24px;
             color: #FFFFFF;
+            @media (max-width:600px) {
+                font-size: 15px;
+                line-height: 24px;
+            }
+            @media (min-width:601px) and (max-width:1099px) {
+                font-size: 15px;
+                line-height: 24px;
+            }
             &:before {
                 color: #FAC136;
                 content: "▪"; 
@@ -40,11 +96,26 @@
             }
             &:not(:last-child) {
                 margin-bottom: 15px;
+                @media (max-width:600px) {
+                    margin-bottom: 10px;
+                }
+                @media (min-width:601px) and (max-width:1099px) {
+                    margin-bottom: 10px;
+                }
             }
         }
     }
     &__img-block {
         display: flex;
+        @media (max-width:600px) {
+            flex-direction: column;
+        }
+        @media (min-width:601px) and (max-width:1099px) {
+            flex-direction: column;
+        }
+        @media (min-width:1100px) and (max-width:1619px) {
+            display: block;
+        }
         p {
             font-family: 'Roboto',sans-serif;
             font-style: normal;
@@ -53,6 +124,17 @@
             line-height: 24px;
             letter-spacing: 0.02em;
             color: #FFFFFF;
+            @media (max-width:600px) {
+                font-size: 14px;
+                line-height: 22px;
+            }
+            @media (min-width:601px) and (max-width:1099px) {
+                font-size: 15px;
+                line-height: 24px;
+            }
+            @media (min-width:1100px) and (max-width:1619px) {
+                font-size: 16px;
+            }
         }
     }
     &__img {
@@ -66,6 +148,30 @@
         border-radius: 10px;
         flex: none;
         margin: 0 40px 0 60px;
+        @media (max-width:600px) {
+            background-image: url(../img/wood-window/distinctive/1-mob.png);
+            height: 220px;
+            width: 100%;
+            margin: 0 0 30px 0;
+            flex: initial;
+            background-position: 30px 0;
+            background-repeat: no-repeat;
+        }
+        @media (min-width:601px) and (max-width:1099px) {
+            width: 100%;
+            height: 360px;
+            background-image: url(../img/wood-window/distinctive/1-plan.png);
+            margin: 0 0 40px 0;
+            flex: initial;
+            background-position: 30px 0;
+            background-repeat: no-repeat;
+        }
+        @media (min-width:1100px) and (max-width:1619px) {
+            float: left;
+            width: 350px;
+            height: 517px;
+            margin: 0 40px 30px;
+        }
         &:before {
             content: '';
             position: absolute;
@@ -75,6 +181,14 @@
             border-radius: 10px;
             top: -30px;
             left: -40px;
+            @media (max-width:600px) {
+                left: 0;
+                width: 95%;
+            }
+            @media (min-width:601px) and (max-width:1099px) {
+                left: 0;
+                width: 97%;
+            }
         }
     }
 }
