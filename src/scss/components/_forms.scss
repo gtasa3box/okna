@@ -76,6 +76,8 @@
         }
         &__items {
             padding-left: 36px;
+            display: flex;
+            flex-direction: column;
             @media (min-width:601px) and (max-width:1099px) {
                 padding-left: 46px;
             }
@@ -254,6 +256,7 @@
             color: #FFFFFF;
             cursor: pointer;
             transition: 0.3s ease;
+            order: 1;
             @media (min-width:601px) and (max-width:1099px) {
                 margin-bottom: 37px;
                 font-size: 12px;
