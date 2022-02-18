@@ -292,3 +292,26 @@ $('.where-applicable__slider').slick({
     }
   ]
 });
+
+//create okna
+
+document.querySelector(".form-calc__plus").addEventListener("click", function() {
+  var elem = document.createElement("div");
+  var back = this.dataset.mathBack;
+  elem.setAttribute("class", "form-calc__item_dop-item");
+  elem.innerHTML = `
+                  <div class="form-calc__item">
+                    <div class="form-calc__width">
+                        <input id="width1" type="number" placeholder="Ширина" maxlength="8">
+                    </div>
+                    <div class="form-calc__height">
+                        <input id="height1" type="number" placeholder="Высота" maxlength="8">
+                    </div>
+                    <div class="form-calc__area">
+                        <!-- <input  type="number" placeholder="Площадь" maxlength="8"> -->
+                        <span id="result1">Площадь</span>
+                    </div>
+                  </div>
+`;
+  document.querySelector(".form-calc__items").appendChild(elem);
+});
